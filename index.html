@@ -4,66 +4,87 @@
     <meta charset="UTF-8">
     <meta name="description" content="Index">
     <meta name="keywords" content="HTML5, CSS layout">
-    <meta name="author" content="TheDegens">
+    <meta name="author" content="TrueDigital">
     <title>Index</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="TheDegensLogo" id="logo">
-        <h1>TheDegens</h1>
-        <p>Your Most Trusted Internet Service Provider!</p>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="jobs.html">Jobs</a></li>
-            <li><a href="apply.html">Apply Now</a></li>
-            <li><a href="about.html">About Us</a></li>
-          </ul>
-        </nav>
-      </header>
-    
-      <main>
-        <section id="about">
-          <h2>About Our Company</h2>
-          <p>TheDegens is a customer-focused and innovative internet service provider. 
-            We are dedicated to delivering fast, reliable, and affordable internet solutions across Australia. 
-            With a mission to keep every home and business connected, 
-            We offer a range of services including broadband plans, home Wi-Fi installation, and 24/7 customer support.</p>
-        </section>
-    
-        <section id="services">
-          <h2>Our Services</h2>
-          <ul>
-            <li>High-Speed Home Internet</li>
-            <li>Business Connectivity Solutions</li>
-            <li>Custom Wi-Fi Setup & Support</li>
-            <li>Unlimited Data Plans</li>
-            <li>24/7 Technical Support</li>
-          </ul>
-        </section>
-    
-        <section id="hiring">
-          <h2>We're Hiring!</h2>
-          <p>Join our growing team of passionate tech professionals</p>
-          <ul>
-            <li>Software Developer</li>
-            <li>Network Administrator</li>
-            <li>Data Analyst</li>
-            <li>Cybersecurity Specialist</li>
-            <li>IT Support Technician</li>
-            <li>Cloud Engineer</li>
-            <li>AI/ML Engineer</li>
-          </ul>
-          <p>Visit our <a href="jobs.html">Jobs</a> page to learn more or head to <a href="apply.html">Apply Now</a> to submit your application!</p>
-        </section>
-      </main>
-    
-      <footer>
-        <p>&copy; 2025 TheDegens</p>
-        <a href="info@thedegens.com.au">Contact Us</a>
-        <p><a href="https://regmasterr.atlassian.net/jira/software/projects/THED/boards/2">Jira Project</a></p>
-        <p><a href="https://github.com/RegMasterr/WebTech-Assignment-1">GitHub</a></p>
-      </footer>
+  <header>
+    <div class="brand">
+      <img src="images/logo.png" alt="TrueDigital Logo" id="logo">
+      <div class="brand-text">
+        <h1><em><strong>TrueDigital</strong></em></h1>
+        <p class="tagline">Powering Your Digital World</p>
+      </div>
+    </div>
+
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html" class="menu-button">Home</a></li>
+        <li><a href="about.html" class="menu-button">About</a></li>
+        <li><a href="jobs.html" class="menu-button">Jobs</a></li>
+        <li><a href="apply.html" class="menu-button">Apply</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="flashcards">
+        <div class="flashcard">
+          <img src="images/homewifi.png" alt="High-Speed Home Internet">
+          <p>High-Speed Home Internet</p>
+        </div>
+        <div class="flashcard">
+          <img src="images/businesswifi.png" alt="Business Connectivity Solutions">
+          <p>Business Connectivity Solutions</p>
+        </div>
+        <div class="flashcard">
+          <img src="images/wifisetup.png" alt="Custom Wi-Fi Setup & Support">
+          <p>Custom Wi-Fi Setup & Support</p>
+        </div>
+        <div class="flashcard">
+          <img src="images/unlimiteddata.png" alt="Unlimited Data Plans">
+          <p>Unlimited Data Plans</p>
+        </div>
+        <div class="flashcard">
+          <img src="images/customersupport.png" alt="24/7 Technical Support">
+          <p>24/7 Technical Support</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="jobs">
+      <h2>Interested in joining our talented team?</h2>
+      <div class="job-content">
+        <div class="job-text">
+          <p>
+            We’re always on the lookout for passionate, driven individuals who want to make a difference. 
+            At TrueDigital, we’re committed to delivering fast, reliable, and affordable internet solutions 
+            to homes and businesses across Australia. If you’re excited about connectivity, technology, and innovation, 
+            this might be your next big move.
+          </p>
+          <p>
+            Join our growing team of tech professionals and help shape the future of digital networks. 
+            If this sounds like you, hit the button below to explore current openings.
+          </p>
+          <a href="jobs.html" class="menu-button job-button">JOBS AVAILABLE</a>
+        </div>
+        <div class="job-image">
+          <img src="images/employees.png" alt="Our Team at TrueDigital">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-buttons">
+      <a href="mailto:info@TrueDigital.com.au" class="footer-button">Contact</a>
+      <a href="https://regmasterr.atlassian.net/jira/software/projects/THED/boards/2" class="footer-button">Jira</a>
+      <a href="https://github.com/RegMasterr/WebTech-Assignment-1" class="footer-button">GitHub</a>
+    </div>
+    <p class="copyright">&copy; 2025 TrueDigital Proprietary Limited</p>
+  </footer>
 </body>
 </html>

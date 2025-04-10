@@ -8,9 +8,30 @@
     <title>Applications</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
+<header>
+    <!-- HEADER SECTION -->
+    <div class="brand">
+      <img src="images/logo.png" alt="TrueDigital Logo" id="logo">
+      <div class="brand-text">
+        <h1><em><strong>TrueDigital</strong></em></h1>
+        <p class="tagline">Powering Your Digital World</p>
+      </div>
+    </div>
+
+    <!-- NAVIGATION MENU -->
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html" class="menu-button">Home</a></li>
+        <li><a href="about.html" class="menu-button">About</a></li>
+        <li><a href="jobs.html" class="menu-button">Jobs</a></li>
+        <li><a href="apply.html" class="menu-button">Apply</a></li>
+      </ul>
+    </nav>
+  </header>
 <body>
-    <fieldset>
-        <legend>Details</legend>
+    <fieldset id="application">
+    <fieldset id="details">
+        <legend id="title">Details</legend>
         <form method="post" action="Data/formtest.php">
             <p>
                 <label for="jobtitles">Job Title</label>
@@ -39,19 +60,21 @@
                 <input type="text" name="dob" id="dob" placeholder="dd/mm/yyyy" pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{4}" required>
             </p>
             <p>
+                <label for="genderlist">Gender</label>
+                <br>
                 <label for="male">Male</label>
                 <input type="radio" name="gender" id="male" value="male" required>
-
+                <br>
                 <label for="female">Female</label>
                 <input type="radio" name="gender" id="female" value="female">
-
+                <br>
                 <label for="other">Other</label>
                 <input type="radio" name="gender" id="other" value="other">
             </p>
         </form>
     </fieldset>
-    <fieldset>
-        <legend>Address</legend>
+    <fieldset id="address">
+        <legend id="title">Address</legend>
             <p>
                 <label for="street">Street Address: </label>
                 <input type="text" name="street" id="street" pattern="{0,40}"
@@ -82,8 +105,8 @@
                 title="Must be 4 numbers" required>
             </p>
     </fieldset>
-    <fieldset>
-        <legend>Details</legend>
+    <fieldset id="pdetails">
+        <legend id="title">Personal Details</legend>
         <form>
             <p>
                 <label for="email">Email: </label>
@@ -97,33 +120,33 @@
             </p>
         </form>
     </fieldset>    
-    <fieldset>
-        <legend>Skills</legend>
+    <fieldset id="skills">
+        <legend id="title">Skills</legend>
             <p>
                 <label for="networkdegree">Networking Degree</label>
                 <input type="checkbox" id="networkdegree" name="techskills" value="networkdegree" checked>
-
+                <br>
                 <label for="mathsdegree">Mathematics/Statics Degree</label>
                 <input type="checkbox" id="mathsdegree" name="techskills" value="mathsdegree">
-
+                <br>
                 <label for="csdegree">Cybersecurity Degree</label>
                 <input type="checkbox" id="csdegree" name="techskills" value="csdegree">
-
+                <br>
                 <label for="itdegree">IT Degree</label>
                 <input type="checkbox" id="itdegree" name="techskills" value="itdegree">
-
+                <br>
                 <label for="highschooldegree">High School Diploma</label>
                 <input type="checkbox" id="highschooldegree" name="techskills" value="highschooldegree">
-
+                <br>
                 <label for="dataexp">Data Analysis Experience</label>
                 <input type="checkbox" id="dataexp" name="techskills" value="dataexp">
-
+                <br>
                 <label for="firewallexp">Firewall Management Experience</label>
                 <input type="checkbox" id="firewallexp" name="techskills" value="firewallexp">
-
+                <br>
                 <label for="oopexp">OOP Experience</label>
                 <input type="checkbox" id="oopexp" name="techskills" value="oopexp">
-
+                <br>
                 <label for="comskills">Communication Skills</label>
                 <input type="checkbox" id="comskills" name="techskills" value="comskills">
             </p>
@@ -137,20 +160,15 @@
                 <input type="file" id="fileupload" name="fileupload" accept=".pdf">
             </form>
     </fieldset>
-    <footer>
-        <aside>
-            <h2>About Our Company</h2>
-            <p>TheDegens is a leading technology firm dedicated to innovation and excellence. We offer competitive salaries, comprehensive benefits, and opportunities for professional growth. Join our team and be part of a dynamic and collaborative work environment.</p>
-        </aside>
-        <p>&copy; 2025 TheDegens. All rights reserved.</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="jobs.html">Jobs</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </footer>        
+</fieldset>
+    <input type="submit" value="Apply">
+    <input type="reset" value="Reset">
+    <!-- FOOTER SECTION -->
+  <footer>
+    <div class="footer-buttons">
+      <a href="mailto:info@TrueDigital.com.au" class="footer-button">Contact</a>
+      <a href="https://regmasterr.atlassian.net/jira/software/projects/THED/boards/2" class="footer-button">Jira</a>
+      <a href="https://github.com/RegMasterr/WebTech-Assignment-1" class="footer-button">GitHub</a>
+    </div>     
 </body>
 </html>
