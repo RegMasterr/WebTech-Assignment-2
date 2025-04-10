@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="Applications">
     <meta name="keywords" content="HTML5, CSS layout">
-    <meta name="author" content="TheDegens">
+    <meta name="author" content="TrueDigital">
     <title>Applications</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
@@ -60,7 +60,7 @@
                 <input type="text" name="dob" id="dob" placeholder="dd/mm/yyyy" pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{4}" required>
             </p>
             <p>
-                <label for="genderlist">Gender</label>
+                <label for="genderlist">Gender:</label>
                 <br>
                 <label for="male">Male</label>
                 <input type="radio" name="gender" id="male" value="male" required>
@@ -123,46 +123,48 @@
     <fieldset id="skills">
         <legend id="title">Skills</legend>
             <p>
-                <label for="networkdegree">Networking Degree</label>
-                <input type="checkbox" id="networkdegree" name="techskills" value="networkdegree" checked>
-                <br>
-                <label for="mathsdegree">Mathematics/Statics Degree</label>
-                <input type="checkbox" id="mathsdegree" name="techskills" value="mathsdegree">
-                <br>
-                <label for="csdegree">Cybersecurity Degree</label>
-                <input type="checkbox" id="csdegree" name="techskills" value="csdegree">
-                <br>
-                <label for="itdegree">IT Degree</label>
-                <input type="checkbox" id="itdegree" name="techskills" value="itdegree">
-                <br>
-                <label for="highschooldegree">High School Diploma</label>
-                <input type="checkbox" id="highschooldegree" name="techskills" value="highschooldegree">
-                <br>
-                <label for="dataexp">Data Analysis Experience</label>
-                <input type="checkbox" id="dataexp" name="techskills" value="dataexp">
-                <br>
-                <label for="firewallexp">Firewall Management Experience</label>
-                <input type="checkbox" id="firewallexp" name="techskills" value="firewallexp">
-                <br>
-                <label for="oopexp">OOP Experience</label>
-                <input type="checkbox" id="oopexp" name="techskills" value="oopexp">
-                <br>
-                <label for="comskills">Communication Skills</label>
-                <input type="checkbox" id="comskills" name="techskills" value="comskills">
+                <label for="networkdegree">
+                <input type="checkbox" id="networkdegree" name="techskills" value="networkdegree" checked>Networking Degree</label>
+                
+                <label for="mathsdegree">
+                <input type="checkbox" id="mathsdegree" name="techskills" value="mathsdegree">Mathematics/Statics Degree</label>
+                
+                <label for="csdegree">
+                <input type="checkbox" id="csdegree" name="techskills" value="csdegree">Cybersecurity Degree</label>
+                
+                <label for="itdegree"><input type="checkbox" id="itdegree" name="techskills" value="itdegree">IT Degree</label>
+                
+                <label for="highschooldegree">
+                <input type="checkbox" id="highschooldegree" name="techskills" value="highschooldegree">High School Diploma</label>
+                
+                <label for="dataexp">
+                <input type="checkbox" id="dataexp" name="techskills" value="dataexp">Data Analysis Experience</label>
+                
+                <label for="firewallexp">
+                <input type="checkbox" id="firewallexp" name="techskills" value="firewallexp">Firewall Management Experience</label>
+                
+                <label for="oopexp">
+                <input type="checkbox" id="oopexp" name="techskills" value="oopexp">OOP Experience</label>
+                
+                <label for="comskills">
+                <input type="checkbox" id="comskills" name="techskills" value="comskills">Communication Skills</label>
             </p>
             <p>
                 <label for="otherskills">Other Skills: </label>
-                <br>
                 <textarea id="otherskills" name="otherskills" rows="4" cols="40"
                 placeholder="Tell us about your skills here, if already checked then type N/A" required></textarea>
             </p>
             <form action="/upload" method="post" enctype="multipart/form-data">
+                <label for="Resume">Add resume here! (Optional)</label>
                 <input type="file" id="fileupload" name="fileupload" accept=".pdf">
             </form>
     </fieldset>
+<div class="application-buttons">
+    <input type="submit" value="Apply" class="appbutton">
+    <input type="reset" value="Reset" class="appbutton">
+</div>
 </fieldset>
-    <input type="submit" value="Apply">
-    <input type="reset" value="Reset">
+    
     <!-- FOOTER SECTION -->
   <footer>
     <div class="footer-buttons">
