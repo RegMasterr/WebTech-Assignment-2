@@ -281,9 +281,118 @@ header {
 
   /* Jobs Page */
 
-
-
-
+  .job-description {
+    border-collapse: collapse; /* reduces space between cells */
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1em;
+    min-width: 700px;
+    max-width: 900px; 
+    border-radius: 5px;
+    overflow: hidden; /* hides overflow content */
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+    font-family: 'Trebuchet MS' , Arial, sans-serif;
+ 
+ }
+ 
+ .job-description th {
+     background-color: rgb(34, 140, 225);
+     color: white; 
+     font-weight: bold;
+     padding: 15px;
+     font-size: 1.25em;
+     text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.1);
+     
+ }
+ 
+ .job-description td {
+     padding: 12px 15px;  /* padding for table cells (vertical/horizontal) */
+     line-height: 25px;
+ }
+ 
+ .job-description tr {
+     border-bottom: 1px solid #dddddd; /* bottom border for table rows */
+ }
+ 
+ .job-description tr:nth-child(odd) {
+     background-color: #f2f2f2; /* light grey background for odd rows */
+ }
+ 
+ .job-description tr:nth-child(3) {
+     font-weight: bold;
+ }
+ .job-description tr:hover {
+     color: rgb(34, 140, 225); 
+ }
+ 
+ .job-description td ul li {
+     list-style-type: none; /* removes bullet points from list items */
+ }
+ 
+ .apply-link {
+     display: flex;
+     justify-content: right;
+     padding: 10px 20px;
+     text-align: center;
+     width: fit-content;
+     margin-left: auto;
+     margin-right: 20px;
+     color: rgb(19, 158, 79);
+     background-color: rgb(255, 255, 255);
+     border: 3.5px solid rgb(19, 158, 79);
+     border-radius: 25px;
+     text-decoration: none;
+     font-family: 'Trebuchet MS', Arial, sans-serif;
+ }
+ 
+ .apply-link:hover {
+     background-color: rgb(5, 187, 65);
+     box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.2);
+ }
+ .job-title {
+     font-size: 1.5em;
+     font-weight: bold;
+     text-align: center;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     color: rgb(34, 140, 225);
+     font-family: 'Trebuchet MS', Arial, sans-serif;
+     text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.2);
+ }
+ 
+ .job-maintitle {
+     font-size: 2.5em;
+     font-weight: bold;
+     text-align: left;
+     margin-left: 20px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     color: rgb(34, 140, 225);
+     font-family: 'Trebuchet MS', Arial, sans-serif;
+     text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.2);
+     border-left: 5px solid rgb(34, 140, 225);
+     padding-left: 15px;
+     background: linear-gradient(to right, rgb(34, 140, 225, 0.1), rgb(34, 140, 225, 0));
+ }
+ aside {
+     font-size: 1.1em;
+     font-family: 'Trebuchet MS', Arial, sans-serif;
+     margin: 20px;
+     padding: 15px;
+     width: 25%;
+     float: right;
+     border: 3px solid rgb(34, 140, 225);
+     border-radius: 5px;
+     background-color: rgb(240, 248, 255); /* light background for better visibility */
+     box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.2);
+     min-width: 300px;
+ }
+ 
+ main {
+     min-width: 68em;
+ }
 
   /* Footer */
 
