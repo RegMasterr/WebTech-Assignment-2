@@ -9,10 +9,10 @@
 
     <nav>
       <ul class="menu">
-        <li><a href="index.html" class="menu-button">Home</a></li>
-        <li><a href="about.html" class="menu-button">About</a></li>
-        <li><a href="jobs.html" class="menu-button">Jobs</a></li>
-        <li><a href="apply.html" class="menu-button">Apply</a></li>
+        <li><a href="index.php" class="menu-button">Home</a></li>
+        <li><a href="about.php" class="menu-button">About</a></li>
+        <li><a href="jobs.php" class="menu-button">Jobs</a></li>
+        <li><a href="apply.php" class="menu-button">Apply</a></li>
       </ul>
     </nav>
 </header>
