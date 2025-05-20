@@ -3,7 +3,6 @@
     if ($conn) {
         $query = "SELECT * FROM jobs";
         $result = mysqli_query($conn, $query);
-        mysqli_close($conn);
     } else {
         echo "<p> Connection failed. </p> " ;
     }
@@ -56,7 +55,7 @@
         echo '<td><ol>' . $job['responsibilities'] . '</ol></td>';
         echo '</tr>';
 
-        // Required Qualifications row (with unordered list)
+        // "Required Qualifications" row (with unordered list)
         echo '<tr>';
         echo '<th>Required Qualifications</th>';
         echo '<td><ul>' . $job['qualifications'] . '</ul></td>';
@@ -66,14 +65,9 @@
         echo '</table>';
         echo '<a href="#" class="apply-link">Apply Now</a>';
         echo '</section>';
-    }
-
-
-
-    // Free result set and close connection
-    mysqli_free_result($result);
+    }   
     mysqli_close($conn);
     ?>
-   <?php include 'inc_files/footer.inc'; ?>
+   <?php include 'inc_files/footer.inc';?>
 </body>
 </html>
