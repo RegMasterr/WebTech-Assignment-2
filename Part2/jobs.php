@@ -13,6 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jobs</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
    <?php include 'inc_files/header.inc'; ?>
@@ -63,7 +64,7 @@
 
         // Close table and section
         echo '</table>';
-        echo '<a href="#" class="apply-link">Apply Now</a>';
+        echo '<a href="apply.php" class="apply-link">Apply Now</a>';
         echo '</section>';
     }   
     mysqli_close($conn);
