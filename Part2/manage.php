@@ -74,7 +74,17 @@
             echo "<td>" . $row['other_skills'] . "</td>";
             echo "<td>" . $row['status'] . "</td>";
             echo "</tr>";
-        
+            echo "<td>
+                <form method='post' action=''>
+                    <input type='hidden' name='eoi_number' value='" . $row['EOInumber'] . "'>
+                    <select name='new_status'>
+                        <option value='New'" . ($row['status'] == 'New' ? ' selected' : '') . ">New</option>
+                        <option value='Current'" . ($row['status'] == 'Current' ? ' selected' : '') . ">Current</option>
+                        <option value='Final'" . ($row['status'] == 'Final' ? ' selected' : '') . ">Final</option>
+                    </select>
+                    <input type='submit' name='update_status' value='Confirm Status'>
+                </form>
+            </td>"; #to change status
         }
         echo "</table>";
     } else {
@@ -128,6 +138,17 @@
             }
         } else {
             echo "<p>Delete failed: " . mysqli_error($conn) . "</p>";
+        }
+    }
+    if (isset($_POST['update_status']) && isset($_POST['eoi_number']) && isset($_POST['new_status'])) {
+        $eoi_number = $_POST['eoi_number'];
+        $new_status = $_POST['new_status'];
+        $query = "UPDATE eoi SET status = '$new_status' WHERE EOInumber = '$eoi_number'";
+        $result = mysqli_query($conn, $query);
+        if ($result) {
+            echo "<p>Status updated successfully for EOI number: $eoi_number</p>";
+        } else {
+            echo "<p>Status update failed: " . mysqli_error($conn) . "</p>";
         }
     }
 } else {
