@@ -4,7 +4,14 @@
     <input type="text" id="job_ref" name="job_ref" required>
     <input type="submit" value="Search">
 </form>
-
+<h2>Search EOIs by Applicant Name</h2>
+<form method="post" action="">
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name">
+    <label for="last_name">Last Name:</label>
+    <input type="text" id="last_name" name="last_name">
+    <input type="submit" value="Search by Name">
+</form>
 <?php
     require_once 'settings.php';
     if ($conn) {
@@ -68,7 +75,7 @@
     }
 }
     if ($conn) {
-        if (isset($_POST['job_ref'])) {
+        if (isset($_POST['job_ref'])) { #job_ref search
             $job_ref = $_POST['job_ref'];
             $query = "SELECT * FROM eoi WHERE job_ref = '$job_ref'";
             $result = mysqli_query($conn, $query);
@@ -79,7 +86,29 @@
                 echo "<p>Query failed: " . mysqli_error($conn) . "</p>";
             }
         }
-    } else {
+        if (isset($_POST['first_name']) || isset($_POST['last_name'])) { #name search
+        $first_name = $_POST['first_name'] ?? '';
+        $last_name = $_POST['last_name'] ?? '';
+
+        $where_clause = ''; #where clause to search by first name and/or last name
+        if (!empty($first_name) && !empty($last_name)) {
+            $where_clause = "WHERE first_name = '$first_name' AND last_name = '$last_name'";
+        } elseif (!empty($first_name)) {
+            $where_clause = "WHERE first_name = '$first_name'";
+        } elseif (!empty($last_name)) {
+            $where_clause = "WHERE last_name = '$last_name'";
+        }
+
+        $query = "SELECT * FROM eoi $where_clause";
+        $result = mysqli_query($conn, $query);
+        if ($result) {
+            echo "<h2>EOIs for Applicant: $first_name $last_name</h2>";
+            display_eois($result);
+        } else {
+            echo "<p>Query failed: " . mysqli_error($conn) . "</p>";
+        }
+    }
+} else {
         echo "<p>Connection failed.</p>";
     }
 ?>
