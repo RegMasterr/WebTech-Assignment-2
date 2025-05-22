@@ -63,7 +63,7 @@
 
         // Close table and section
         echo '</table>';
-        echo '<a href="#" class="apply-link">Apply Now</a>';
+        echo '<a href="apply.php" class="apply-link">Apply Now</a>';
         echo '</section>';
     }   
     mysqli_close($conn);
