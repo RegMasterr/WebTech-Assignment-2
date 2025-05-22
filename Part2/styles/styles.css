@@ -1,0 +1,553 @@
+  /* misc */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+
+
+
+
+  /* Header */
+  
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.brand {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.brand-text h1 {
+    font-size: 36px;
+}
+
+
+#logo {
+    max-width: 100px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+  }
+
+.menu li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+
+.menu-button {
+    color: #007BFF;
+    background-color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 25px;
+    border-radius: 50px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+}
+
+.menu-button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+
+
+
+
+/* ABOUT PAGE */
+
+.header-placeholder {
+  border: solid #000000 3px;
+  text-align: center;
+  margin: 10px;
+}
+
+.footer-placeholder {
+  border: solid #000000 3px;
+  text-align: center;
+  margin: 10px;
+  clear: both;
+}
+
+.centered
+{
+  text-align: center;
+  margin-left: 22%;
+  margin-right: 22%;
+}
+
+/*box display*/
+
+.box {
+  border: rgb(34, 110, 225) solid 3px;
+  border-radius: 10px;
+  padding: 0.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  background-color: rgb(34, 110, 225);
+  color: #ffffff;
+  text-align: center;
+  margin: 20px;
+}
+
+.box h2, .box h1 {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 0.5em;
+  color: rgb(34, 110, 225);
+}
+
+.box p {
+  color: #ffffff;
+}
+
+.box-section {
+  display: flex;
+  justify-content: center;
+}
+
+/*about company*/
+
+.about-company {
+  width: 53.5%;
+}
+
+.about-group {
+  width: 53.5%;
+}
+
+.about-group li {
+  list-style-type: none;
+  display: inline-grid;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+/*interests*/
+
+.interests {
+  
+}
+
+.interests table {
+  border: 4px solid #ffffff;
+  border-radius: 5px;
+}
+
+.interests th, .interests td {
+  padding: 0.5em;
+  color: rgb(34, 110, 225);
+}
+
+.interests td {
+  color: #ffffff;
+}
+
+.interests th {
+  background-color: rgb(255, 255, 255);    
+}
+
+/*.interests table tr:nth-child(odd) {
+  background-color: #0000ff;
+}*/
+
+/*contributions*/
+
+.contributions {
+  float: left;
+}
+
+.contributions dl {
+  border: rgb(154, 179, 217) 4px solid;
+  border-radius: 5px;
+  display: grid;
+}
+
+.contributions dt {
+  background-color: #ffffff;
+  padding: 0.5em;
+  text-align: left;
+  font-weight: bold;
+  color: rgb(34, 110, 225);
+}
+
+.contributions dd {
+  padding: 0.5em;
+  text-align: right;
+  color: #ffffff;
+  padding-right: 1em;
+  padding-left: 4em;
+}
+
+
+
+
+
+/* Application Page */
+
+#details, #address, #pdetails, #skills {
+    background-color: rgb(34, 140, 225);
+    font-family: 'Trebuchet MS' , Arial, sans-serif;
+    color: white;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    line-height: 25px;
+    width: 40%;
+    padding: 10px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#title {
+    color: white;
+    font-style: italic;
+    text-align: center;
+    background-color: #AAB8C2;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#details input[type="radio"] {
+    float: left;
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 6px;
+}
+
+#skills label {  
+    display: flex; 
+    margin-bottom: 0.5em;
+    gap: 0.5em;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#application {
+    background-color: #E1E8ED;
+}
+
+.application-buttons {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+
+.appbutton {
+    color: #333; 
+    background-color: white; 
+    text-decoration: none; /* Removes underline */
+    font-size: 16px;
+    padding: 10px 20px; 
+    border-radius: 50px; 
+    display: inline-block; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.appbutton:hover {
+    background-color: #3399FF; 
+    color: white; 
+}
+
+  /* Index page */
+  #services {
+    padding: 40px 5%;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  #services h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #000;
+  }
+  
+  .flashcards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  
+  .flashcard {
+    background-color: #007BFF;
+    color: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 220px;
+    border: 2px solid black;
+    flex-shrink: 0;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s;
+  }
+  
+  .flashcard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .flashcard img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 20px;
+  }
+  
+  .flashcard p {
+    font-size: 17px;
+    font-weight: bold;
+  }
+  /* jobs section */
+
+  #jobs {
+    padding: 40px 80px 60px;
+    background-color: #f4f4f4;
+    color: #000;
+  }
+  
+  #jobs h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: left;
+  }
+  
+  .job-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .job-text {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .job-text p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  
+  .job-button {
+    margin-top: 10px;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: transparent;
+    color: #007bff;
+    border: 2px solid #007bff;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .job-button:hover {
+    background-color: #e0e0e0;
+    color: #000;
+    border-color: #c0c0c0;
+  }
+  
+  .job-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .job-image img {
+    max-height: 450px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+
+
+  /* Jobs Page */
+
+  .job-description {
+    border-collapse: collapse; /* reduces space between cells */
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1em;
+    min-width: 700px;
+    max-width: 900px; 
+    border-radius: 5px;
+    overflow: hidden; /* hides overflow content */
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+    font-family: 'Trebuchet MS' , Arial, sans-serif;
+ 
+ }
+ 
+ .job-description th {
+     background-color: rgb(34, 140, 225);
+     color: white; 
+     font-weight: bold;
+     padding: 15px;
+     font-size: 1.25em;
+     text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.1);
+     
+ }
+ 
+ .job-description td {
+     padding: 12px 15px;  /* padding for table cells (vertical/horizontal) */
+     line-height: 25px;
+ }
+ 
+ .job-description tr {
+     border-bottom: 1px solid #dddddd; /* bottom border for table rows */
+ }
+ 
+ .job-description tr:nth-child(odd) {
+     background-color: #f2f2f2; /* light grey background for odd rows */
+ }
+ 
+ .job-description tr:nth-child(3) {
+     font-weight: bold;
+ }
+ .job-description tr:hover {
+     color: rgb(34, 140, 225); 
+ }
+ 
+ .job-description td ul li {
+     list-style-type: none; /* removes bullet points from list items */
+ }
+ 
+ .apply-link {
+     display: flex;
+     justify-content: right;
+     padding: 10px 20px;
+     text-align: center;
+     width: fit-content;
+     margin-left: auto;
+     margin-right: 20px;
+     color: rgb(19, 158, 79);
+     background-color: rgb(255, 255, 255);
+     border: 3.5px solid rgb(19, 158, 79);
+     border-radius: 25px;
+     text-decoration: none;
+     font-family: 'Trebuchet MS', Arial, sans-serif;
+ }
+ 
+ .apply-link:hover {
+     background-color: rgb(5, 187, 65);
+     box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.2);
+ }
+ .job-title {
+     font-size: 1.5em;
+     font-weight: bold;
+     text-align: center;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     color: rgb(34, 140, 225);
+     font-family: 'Trebuchet MS', Arial, sans-serif;
+     text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.2);
+ }
+ 
+ .job-maintitle {
+     font-size: 2.5em;
+     font-weight: bold;
+     text-align: left;
+     margin-left: 20px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     color: rgb(34, 140, 225);
+     font-family: 'Trebuchet MS', Arial, sans-serif;
+     text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.2);
+     border-left: 5px solid rgb(34, 140, 225);
+     padding-left: 15px;
+     background: linear-gradient(to right, rgb(34, 140, 225, 0.1), rgb(34, 140, 225, 0));
+ }
+ aside {
+     font-size: 1.1em;
+     font-family: 'Trebuchet MS', Arial, sans-serif;
+     margin: 20px;
+     padding: 15px;
+     width: 25%;
+     float: right;
+     border: 3px solid rgb(34, 140, 225);
+     border-radius: 5px;
+     background-color: rgb(240, 248, 255); /* light background for better visibility */
+     box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.2);
+     min-width: 300px;
+ }
+ 
+ main {
+     min-width: 68em;
+ }
+
+  /* Footer */
+
+  footer {
+    background-color: #333; /* gray background */
+    padding: 30px 20px; 
+    text-align: center; 
+    color: white; 
+}
+
+
+.footer-buttons {
+    display: flex; /* Horizontal layout */
+    justify-content: center; 
+    gap: 20px; 
+    margin-bottom: 20px; 
+}
+
+/* Individual footer buttons */
+.footer-button {
+    color: #333; 
+    background-color: white; 
+    text-decoration: none; /* Removes underline */
+    font-size: 16px;
+    padding: 10px 20px; 
+    border-radius: 50px; 
+    display: inline-block; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+
+.footer-button:hover {
+    background-color: #3399FF; 
+    color: white; 
+}
+
+
+footer p {
+    margin-top: 10px; 
+    font-size: 14px; 
+    color: #ccc; 
+}
