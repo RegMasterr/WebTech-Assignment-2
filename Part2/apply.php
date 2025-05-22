@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Applications">
-    <meta name="keywords" content="HTML5, CSS layout">
+    <meta name="keywords" content="PHP, HTML5, CSS">
     <meta name="author" content="TrueDigital">
     <title>Applications</title>
     <link rel="stylesheet" href="styles/styles.css">
@@ -18,7 +18,7 @@
     <fieldset id="application">
     <fieldset id="details">
         <legend id="title">Details</legend>
-        <form method="post" action="Data/formtest.php">
+        <form method="post" action="Part2/process_eoi.php">
             <p>
                 <label for="jobtitles">Job Title</label>
                 <select name="jobtitles" id="jobtitles" required>
@@ -57,9 +57,6 @@
                 <label for="other">Other</label>
                 <input type="radio" name="gender" id="other" value="other">
             </p>
-        </form>
-    </fieldset>
-    <fieldset id="address">
         <legend id="title">Address</legend>
             <p>
                 <label for="street">Street Address: </label>
@@ -90,10 +87,7 @@
                 <input type="text" name="postcode" id="postcode" pattern="{4}"
                 title="Must be 4 numbers" required>
             </p>
-    </fieldset>
-    <fieldset id="pdetails">
         <legend id="title">Personal Details</legend>
-        <form>
             <p>
                 <label for="email">Email: </label>
                 <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" 
@@ -104,9 +98,6 @@
                 <input type="text" name="phonenumber" id="phonenumber" pattern="{10}"
                 title="Please enter your phone number" required>
             </p>
-        </form>
-    </fieldset>    
-    <fieldset id="skills">
         <legend id="title">Skills</legend>
             <p>
                 <label for="networkdegree">
@@ -140,7 +131,6 @@
                 <textarea id="otherskills" name="otherskills" rows="4" cols="40"
                 placeholder="Tell us about your skills here, if already checked then type N/A" required></textarea>
             </p>
-            <form action="/upload" method="post" enctype="multipart/form-data">
                 <label for="Resume">Add resume here! (Optional)</label>
                 <input type="file" id="fileupload" name="fileupload" accept=".pdf">
             </form>
@@ -150,7 +140,6 @@
     <input type="reset" value="Reset" class="appbutton">
 </div>
 </fieldset>
-    
     <!-- FOOTER SECTION -->
     <footer>
     <?php
