@@ -13,6 +13,7 @@
         <li><a href="about.php" class="menu-button">About</a></li>
         <li><a href="jobs.php" class="menu-button">Jobs</a></li>
         <li><a href="apply.php" class="menu-button">Apply</a></li>
+        <li><a href="enhancements.php" class="menu-button">Apply</a></li>
       </ul>
     </nav>
 </header>
