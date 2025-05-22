@@ -24,10 +24,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jobs`
+-- Table structure for table `jobs2`
 --
 
-CREATE TABLE `jobs` (
+CREATE TABLE `jobs2` (
   `job_title` varchar(150) NOT NULL,
   `job_description` text NOT NULL,
   `salary_range` text NOT NULL,
@@ -37,10 +37,10 @@ CREATE TABLE `jobs` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `jobs`
+-- Dumping data for table `jobs2`
 --
 
-INSERT INTO `jobs` (`job_title`, `job_description`, `salary_range`, `reports_to`, `responsibilities`, `qualifications`) VALUES
+INSERT INTO `jobs2` (`job_title`, `job_description`, `salary_range`, `reports_to`, `responsibilities`, `qualifications`) VALUES
 ('Customer Service Representative (CS006)', 'Provide excellent customer service by addressing inquiries, resolving issues, and ensuring customer satisfaction.', '$AUD40,000 - $AUD55,000 per year', 'Customer Service Manager', '<li> Respond to customer inquiries via phone, email, or chat.</li>\n<li> Resolve complaints in a timely and professional manner.</li>\n<li> Maintain accurate customer records.</li>\n<li> Collaborate with other departments.</li>', '<li><strong>Essential:</strong> High school diploma or equivalent.</li>\n                            <li><strong>Essential:</strong> 1 year of experience in customer service.</li>\n                            <li><strong>Essential:</strong> Strong communication and interpersonal skills.</li>\n                            <li><strong>Preferable:</strong> Experience with CRM software.</li>\n                            <li><strong>Preferable:</strong> Multilingual abilities.</li>'),
 ('Cybersecurity Specialist (CS004)', 'Protect the company\'s information systems from cyber threats and ensure data security.', '$AUD75,000 - $AUD95,000 per year', 'Chief Information Security Officer', '<li>Monitor security systems and respond to incidents.</li>\n                            <li>Conduct vulnerability assessments and penetration testing.</li>\n                            <li>Develop and implement security policies and procedures.</li>\n                            <li>Educate employees on cybersecurity best practices.</li>', '<li><strong>Essential:</strong> Bachelor\'s degree in Cybersecurity or related field.</li>\n                            <li><strong>Essential:</strong> 3 years of experience in cybersecurity.</li>\n                            <li><strong>Essential:</strong> Knowledge of security frameworks and compliance standards.</li>\n                            <li><strong>Preferable:</strong> CISSP or equivalent certification.</li>\n                            <li><strong>Preferable:</strong> Experience with SIEM tools.</li>'),
 ('Data Analyst (DA003)', 'Analyze and interpret complex data sets to provide actionable insights for decision-making.', '$AUD65,000 - $AUD85,000 per year', 'Data Science Manager', '<li>Collect and clean data from various sources.</li>\n                            <li>Perform statistical analysis and data visualization.</li>\n                            <li>Develop reports and dashboards to communicate findings.</li>\n                            <li>Collaborate with stakeholders to understand data needs.</li>', '<li><strong>Essential:</strong> Bachelor\'s degree in Statistics, Mathematics, or related field.</li>\n                            <li><strong>Essential:</strong> 2 years of experience in data analysis.</li>\n                            <li><strong>Essential:</strong> Proficiency in SQL and data visualization tools (e.g., Tableau).</li>\n                            <li><strong>Preferable:</strong> Experience with Python or R for data analysis.</li>\n                            <li><strong>Preferable:</strong> Strong communication skills.</li>'),
@@ -53,9 +53,9 @@ INSERT INTO `jobs` (`job_title`, `job_description`, `salary_range`, `reports_to`
 --
 
 --
--- Indexes for table `jobs`
+-- Indexes for table `jobs2`
 --
-ALTER TABLE `jobs`
+ALTER TABLE `jobs2`
   ADD PRIMARY KEY (`job_title`);
 COMMIT;
 
