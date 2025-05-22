@@ -1,12 +1,20 @@
+<h2>Search EOIs by Job Reference</h2>
+<form method="post" action="">
+    <label for="job_ref">Enter Job Reference Number:</label>
+    <input type="text" id="job_ref" name="job_ref" required>
+    <input type="submit" value="Search">
+</form>
+
 <?php
     require_once 'settings.php';
     if ($conn) {
         $query = "SELECT * FROM eoi";
         $result = mysqli_query($conn, $query);
+        display_eois($result);
     } else {
         echo "<p> Connection failed. </p> " ;
     }
-    function display_all_eois($result) {
+    function display_eois($result) {
     if ($result && mysqli_num_rows($result) > 0) {
         echo "<table>";
         echo "<tr>
@@ -59,4 +67,19 @@
         echo "<p>No EOIs found.</p>";
     }
 }
+    if ($conn) {
+        if (isset($_POST['job_ref'])) {
+            $job_ref = $_POST['job_ref'];
+            $query = "SELECT * FROM eoi WHERE job_ref = '$job_ref'";
+            $result = mysqli_query($conn, $query);
+            if ($result) {
+                echo "<h2>EOIs for Job Reference: $job_ref</h2>";
+                display_eois($result);
+            } else {
+                echo "<p>Query failed: " . mysqli_error($conn) . "</p>";
+            }
+        }
+    } else {
+        echo "<p>Connection failed.</p>";
+    }
 ?>
