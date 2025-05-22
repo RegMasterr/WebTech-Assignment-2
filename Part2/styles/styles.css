@@ -446,7 +446,9 @@ header {
  .job-description td ul li {
      list-style-type: none; /* removes bullet points from list items */
  }
- 
+  .job-description tr ol li{
+  margin-left: 20px; 
+ }
  .apply-link {
      display: flex;
      justify-content: right;
