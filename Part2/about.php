@@ -12,7 +12,7 @@
 <!-- header nav bar -->
 <header>
     <?php
-        include "header.inc";
+        include 'inc_files/header.inc';
     ?>
 </header>
 
@@ -95,7 +95,7 @@
 <br>
 <!-- footer links and info -->
     <?php
-        include "footer.inc";
+        include 'inc_files/footer.inc';
     ?>
 </body>
 </html>
