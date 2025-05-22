@@ -1,7 +1,7 @@
 <?php
     require_once 'settings.php';
     if ($conn) {
-        $query = "SELECT * FROM jobs";
+        $query = "SELECT * FROM jobs2";
         $result = mysqli_query($conn, $query);
     } else {
         echo "<p> Connection failed. </p> " ;
