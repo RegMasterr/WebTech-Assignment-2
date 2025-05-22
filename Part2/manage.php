@@ -12,6 +12,12 @@
     <input type="text" id="last_name" name="last_name">
     <input type="submit" value="Search by Name">
 </form>
+<h2>Delete EOIs by Job Reference</h2>
+<form method="post" action="">
+    <label for="delete_job_ref">Enter Job Reference Number to Delete:</label>
+    <input type="text" id="delete_job_ref" name="delete_job_ref" required>
+    <input type="submit" value="Delete EOIs">
+</form>
 <?php
     require_once 'settings.php';
     if ($conn) {
@@ -68,6 +74,7 @@
             echo "<td>" . $row['other_skills'] . "</td>";
             echo "<td>" . $row['status'] . "</td>";
             echo "</tr>";
+        
         }
         echo "</table>";
     } else {
@@ -106,6 +113,21 @@
             display_eois($result);
         } else {
             echo "<p>Query failed: " . mysqli_error($conn) . "</p>";
+        }
+    }
+    if (isset($_POST['delete_job_ref'])) { #delete applicants by job_ref
+        $delete_job_ref = $_POST['delete_job_ref'];
+        $query = "DELETE FROM eoi WHERE job_ref = '$delete_job_ref'";
+        $result = mysqli_query($conn, $query);
+        if ($result) {
+            $affected_rows = mysqli_affected_rows($conn);
+            if ($affected_rows > 0) {
+                echo "<p>Successfully deleted $affected_rows EOI(s) for Job Reference: $delete_job_ref</p>";
+            } else {
+                echo "<p>No EOIs found for Job Reference: $delete_job_ref</p>";
+            }
+        } else {
+            echo "<p>Delete failed: " . mysqli_error($conn) . "</p>";
         }
     }
 } else {
