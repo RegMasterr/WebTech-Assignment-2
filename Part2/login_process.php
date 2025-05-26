@@ -19,7 +19,7 @@ if (isset($_POST['username'])) {
     if ($user = mysqli_fetch_assoc($result)) {
         $_SESSION['username'] = $user['username'];
         
-            if ($user ['username'] =  'admin' && $password = 'TrueDigital') {
+            if ($user ['username'] ==  'admin' && $password == 'TrueDigital') {
                 header("Location:manage.php");
                 exit();
             } else {
