@@ -2,100 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="About">
-    <meta name="keywords" content="PHP, HTML5, CSS">
-    <meta name="author" content="TrueDigital">
-    <title>About</title>
+    <meta name="description" content="About TrueDigital - Our Team, Contributions, and Interests">
+    <meta name="keywords" content="TrueDigital, About Us, Team, Contributions, Interests, Networking, Web Project">
+    <meta name="author" content="Anas Al Azad, Dang Gia Bach Vu, Reegen Cleminson">
+    <title>About Us - TrueDigital</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-<!-- header nav bar -->
-<header>
-    <?php
-        include 'inc_files/header.inc';
-    ?>
-</header>
+    <?php include 'inc_files/header.inc'; ?>
+    <main class="about-main">
+        <h1 class="page-main-heading">About Us</h1>
+        <section class="about-us-intro enhancement-card">
+            <p class="enhancement-description">
+                We’re True Digital — a team of young tech enthusiasts building our first web project: a networking company website. This uni project quickly turned into something we’re all proud of. We aim to take this idea beyond just a website and make it global one day. True Digital is all about smart design, solid code, and big ambition!
+            </p>
+        </section>
 
-<!-- about company -->
-<br>
-<div class="box-section">
-    <div class="box about-company">
-        <h1>About Our Company</h1>
-        <p>
-            True Digital is a leading technology firm dedicated to innovation and excellence.
-            We offer competitive salaries, comprehensive benefits, and opportunities for
-            professional growth. Join our team and be part of a dynamic and collaborative
-            work environment.
-        </p>
-        <br>
-    </div>
-</div>
+        <h1 class="page-main-heading">Our Contributions and Interests</h1>
 
-<!-- group members -->
-<div class="box-section">
-    <div class="box about-group">
+        <section class="team-member-card">
+            <div class="member-content">
+                <img src="images/anas.png" alt="Anas Al Azad" class="member-photo">
+                <div class="member-text">
+                    <h2 class="member-title">Hey I'm Anas</h2>
+                    <p class="member-contribution enhancement-description">
+                        For this project, I built the home page for Part 1. I also designed the artwork and logos, and created the header and footer used across the site. In Part 2, I rebuilt the About and Apply pages. I created the EOI table and the process_eoi.php script to validate and store applications. I styled the entire website with a new consistent, user-friendly theme and tested it with all PHP code to ensure everything works smoothly.
+                    </p>
+                    <p class="member-interests-label enhancement-description">I am interested in:</p>
+                    <div class="interest-capsules">
+                        <span class="interest-capsule">Fortnite</span>
+                        <span class="interest-capsule">Guitar</span>
+                        <span class="interest-capsule">Basketball</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <h2>True Digital (Thursday 10:30)</h2>
-        <ul>
-            <li>Reegen Cleminson <strong>ID 0411593777</strong></li>
-            <li>Anas Al Azad <strong>ID 0414434013</strong></li>
-            <li>Dang Gia Bach Vu <strong>ID 0433162792</strong></li>
-        </ul>
-        <br>
-    </div>
-</div>
+        <section class="team-member-card">
+            <div class="member-content">
+                <img src="images/bach.png" alt="Dang Gia Bach Vu" class="member-photo">
+                <div class="member-text">
+                    <h2 class="member-title">Hey I'm Bach</h2>
+                    <p class="member-contribution enhancement-description">
+                        For this project, I created the Job Descriptions page in Part 1. In Part 2, I built the jobs table and worked on jobs.php and manage.php. I made sure job listings load dynamically from the database and managers can query the EOI table to view applications.
+                    </p>
+                    <p class="member-interests-label enhancement-description">I am interested in:</p>
+                    <div class="interest-capsules">
+                        <span class="interest-capsule">Gambling</span>
+                        <span class="interest-capsule">Games</span>
+                        <span class="interest-capsule">Movies</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<div class="box-section">
-    <!-- contributions -->
-    <div class="contributions box">
-        <h2>Contributions</h2>
-        <dl>
-            <dt>Reegen</dt>
-            <dd>Application and About Pages</dd>
-        
-            <dt>Anas</dt>
-            <dd>Home Page</dd>
-        
-            <dt>Bach</dt>
-            <dd>Jobs Page</dd>
-        
-        </dl>
-    </div>
+        <section class="team-member-card">
+            <div class="member-content">
+                <img src="images/reegan.png" alt="Reegen Cleminson" class="member-photo">
+                <div class="member-text">
+                    <h2 class="member-title">Hey I'm Reegan</h2>
+                    <p class="member-contribution enhancement-description">
+                        For this project, I built the Apply page for Part 1 and set up the project tools like GitHub, Jira, and compiled the final submission. In Part 2, I created the login and registration system with validation and access control, including lockout after multiple failed logins. I also made enhancements.php and helped with shared setup files like header/footer.inc and settings.php.
+                    </p>
+                    <p class="member-interests-label enhancement-description">I am interested in:</p>
+                    <div class="interest-capsules">
+                        <span class="interest-capsule">Game Development</span>
+                        <span class="interest-capsule">Coding</span>
+                        <span class="interest-capsule">Nature</span>
+                    </div>
+                </div>
+            </section>
+        </section>
 
-    <!-- interests -->
-    <div class="interests box">
-        <h2>Our Interests</h2>
-        <table cellspacing="0" cellpadding="0">
-            <tr>
-                <th>Reegan</th>
-                <th>Anas</th>
-                <th>Bach</th>
-            </tr>
-        
-            <tr>
-                <td>Game Development</td>
-                <td>Sketching</td>
-                <td>Gambling</td>
-            </tr>
-        
-            <tr>
-                <td>Coding</td>
-                <td>Guitar</td>
-                <td>Movies</td>
-            </tr>
-        
-            <tr>
-                <td>Nature</td>
-                <td>Skateboarding</td>
-                <td>Games</td>
-            </tr>
-        </table>
-    </div>
-</div>
-<br>
-<!-- footer links and info -->
-    <?php
-        include 'inc_files/footer.inc';
-    ?>
+        <section class="class-details-card enhancement-card">
+            <h2 class="enhancement-title">Class Details</h2>
+            <p class="enhancement-description">
+                Our class is on Thursday at 10:30 AM.
+            </p>
+            <ul class="member-list enhancement-description">
+                <li>Anas Al Azad (ID: 105694136)</li>
+                <li>Dang Gia Bach Vu (ID: 105191365)</li>
+                <li>Reegan Cleminson (ID: 105051016)</li>
+            </ul>
+        </section>
+
+    </main>
+<?php include 'inc_files/footer.inc'; ?>
+    
 </body>
 </html>

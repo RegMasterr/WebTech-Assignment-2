@@ -1,21 +1,20 @@
-  /* misc */
-
+/* ====================
+   Global/Misc Styles
+   ==================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
- 
-  body {
+}
+
+body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-  }
+}
 
-
-
-
-  /* Header */
-  
+/* ====================
+   Header Styles
+   ==================== */
 header {
     background-color: #007BFF;
     color: white;
@@ -36,7 +35,6 @@ header {
     font-size: 36px;
 }
 
-
 #logo {
     max-width: 100px;
 }
@@ -45,14 +43,15 @@ header {
     list-style: none;
     display: flex;
     gap: 24px;
-  }
+}
 
 .menu li {
     display: inline;
     margin: 0;
     padding: 0;
-  }
+}
 
+/* Base style for all menu buttons */
 .menu-button {
     color: #007BFF;
     background-color: white;
@@ -70,232 +69,88 @@ header {
     color: white;
 }
 
-
-
-
-
-/* ABOUT PAGE */
-
-.header-placeholder {
-  border: solid #000000 3px;
-  text-align: center;
-  margin: 10px;
-}
-
-.footer-placeholder {
-  border: solid #000000 3px;
-  text-align: center;
-  margin: 10px;
-  clear: both;
-}
-
-.centered
-{
-  text-align: center;
-  margin-left: 22%;
-  margin-right: 22%;
-}
-
-/*box display*/
-
-.box {
-  border: rgb(34, 110, 225) solid 3px;
-  border-radius: 10px;
-  padding: 0.5em;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  background-color: rgb(34, 110, 225);
-  color: #ffffff;
-  text-align: center;
-  margin: 20px;
-}
-
-.box h2, .box h1 {
-  background-color: #ffffff;
-  border-radius: 5px;
-  padding: 0.5em;
-  color: rgb(34, 110, 225);
-}
-
-.box p {
-  color: #ffffff;
-}
-
-.box-section {
-  display: flex;
-  justify-content: center;
-}
-
-/*about company*/
-
-.about-company {
-  width: 53.5%;
-}
-
-.about-group {
-  width: 53.5%;
-}
-
-.about-group li {
-  list-style-type: none;
-  display: inline-grid;
-  margin-left: 1em;
-  margin-right: 1em;
-}
-
-/*interests*/
-
-.interests {
-  
-}
-
-.interests table {
-  border: 4px solid #ffffff;
-  border-radius: 5px;
-}
-
-.interests th, .interests td {
-  padding: 0.5em;
-  color: rgb(34, 110, 225);
-}
-
-.interests td {
-  color: #ffffff;
-}
-
-.interests th {
-  background-color: rgb(255, 255, 255);    
-}
-
-/*.interests table tr:nth-child(odd) {
-  background-color: #0000ff;
-}*/
-
-/*contributions*/
-
-.contributions {
-  float: left;
-}
-
-.contributions dl {
-  border: rgb(154, 179, 217) 4px solid;
-  border-radius: 5px;
-  display: grid;
-}
-
-.contributions dt {
-  background-color: #ffffff;
-  padding: 0.5em;
-  text-align: left;
-  font-weight: bold;
-  color: rgb(34, 110, 225);
-}
-
-.contributions dd {
-  padding: 0.5em;
-  text-align: right;
-  color: #ffffff;
-  padding-right: 1em;
-  padding-left: 4em;
-}
-
-
-
-
-
-/* Application Page */
-
-#details, #address, #pdetails, #skills {
-    background-color: rgb(34, 140, 225);
-    font-family: 'Trebuchet MS' , Arial, sans-serif;
-    color: white;
-    border: 1px solid darkgray;
-    border-radius: 10px;
-    line-height: 25px;
-    width: 40%;
-    padding: 10px;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-#title {
-    color: white;
-    font-style: italic;
+/* Specific styling for the Login link to make it look like a button */
+.menu a[href="login.php"] {
+    color: #007BFF;
+    background-color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 25px;
+    border-radius: 50px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
     text-align: center;
-    background-color: #AAB8C2;
-    padding: 5px 10px;
-    border-radius: 5px;
 }
 
-#details input[type="radio"] {
-    float: left;
-    margin-right: 10px;
-    width: 16px;
-    height: 16px;
-    position: relative;
-    top: 6px;
+.menu a[href="login.php"]:hover {
+    background-color: #0056b3;
+    color: white;
 }
 
-#skills label {  
-    display: flex; 
-    margin-bottom: 0.5em;
-    gap: 0.5em;
-    align-items: center;
-    font-size: 16px;
-    cursor: pointer;
+/* ====================
+   Footer Styles
+   ==================== */
+footer {
+    background-color: #333; /* gray background */
+    padding: 30px 20px;
+    text-align: center;
+    color: white;
 }
 
-#application {
-    background-color: #E1E8ED;
+.footer-buttons {
+    display: flex; /* Horizontal layout */
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
 }
 
-.application-buttons {
-    display: flex;
-    justify-content: center; 
-    gap: 20px; 
-    margin-top: 10px; 
-    margin-bottom: 10px;
-}
-
-.appbutton {
-    color: #333; 
-    background-color: white; 
+/* Individual footer buttons */
+.footer-button {
+    color: #333;
+    background-color: white;
     text-decoration: none; /* Removes underline */
     font-size: 16px;
-    padding: 10px 20px; 
-    border-radius: 50px; 
-    display: inline-block; 
-    transition: background-color 0.3s, color 0.3s; 
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.appbutton:hover {
-    background-color: #3399FF; 
-    color: white; 
+.footer-button:hover {
+    background-color: #3399FF;
+    color: white;
 }
 
-  /* Index page */
-  #services {
+footer p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* ====================
+   Index Page Styles
+   ==================== */
+#services {
     padding: 40px 5%;
     background-color: #fff;
     text-align: center;
-  }
-  
-  #services h2 {
+}
+
+#services h2 {
     font-size: 32px;
     margin-bottom: 40px;
     color: #000;
-  }
-  
-  .flashcards {
+}
+
+.flashcards {
     display: flex;
     justify-content: space-between;
     gap: 30px;
     flex-wrap: nowrap;
     overflow-x: auto;
-  }
-  
-  .flashcard {
+}
+
+.flashcard {
     background-color: #007BFF;
     color: white;
     padding: 30px 20px;
@@ -306,59 +161,59 @@ header {
     flex-shrink: 0;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
     transition: transform 0.2s;
-  }
-  
-  .flashcard:hover {
+}
+
+.flashcard:hover {
     transform: translateY(-5px);
-  }
-  
-  .flashcard img {
+}
+
+.flashcard img {
     width: 80px;
     height: 80px;
     object-fit: contain;
     margin-bottom: 20px;
-  }
-  
-  .flashcard p {
+}
+
+.flashcard p {
     font-size: 17px;
     font-weight: bold;
-  }
-  /* jobs section */
+}
 
-  #jobs {
+/* Jobs section on Index page */
+#jobs {
     padding: 40px 80px 60px;
     background-color: #f4f4f4;
     color: #000;
-  }
-  
-  #jobs h2 {
+}
+
+#jobs h2 {
     font-size: 36px;
     margin-bottom: 30px;
     font-weight: 700;
     text-align: left;
-  }
-  
-  .job-content {
+}
+
+.job-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
     flex-wrap: wrap;
-  }
-  
-  .job-text {
+}
+
+.job-text {
     flex: 1;
     max-width: 600px;
-  }
-  
-  .job-text p {
+}
+
+.job-text p {
     font-size: 17px;
     line-height: 1.7;
     margin-bottom: 20px;
     font-weight: 500;
-  }
-  
-  .job-button {
+}
+
+.job-button {
     margin-top: 10px;
     padding: 12px 28px;
     font-size: 16px;
@@ -370,186 +225,840 @@ header {
     transition: background-color 0.3s, color 0.3s;
     display: inline-block;
     text-decoration: none;
-  }
-  
-  .job-button:hover {
+}
+
+.job-button:hover {
     background-color: #e0e0e0;
     color: #000;
     border-color: #c0c0c0;
-  }
-  
-  .job-image {
+}
+
+.job-image {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .job-image img {
+}
+
+.job-image img {
     max-height: 450px;
     width: auto;
     height: auto;
     object-fit: contain;
     display: block;
-  }
+}
 
+/* ====================
+   About Page Styles (Updated)
+   ==================== */
 
+/* Main container for the about page content */
+.about-main {
+    padding: 20px;
+    max-width: 1000px; /* Slightly wider for member sections */
+    margin: 20px auto 40px auto; /* Centers content with more space below */
+    background-color: #f9f9f9; /* Light background for the main area */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05); /* Soft shadow for the main area */
+}
 
-  /* Jobs Page */
+/* Styling for each team member's card */
+.team-member-card {
+    background-color: #fff; /* White background for each member card */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for the card */
+    margin-bottom: 30px; /* Space between cards */
+    padding: 25px; /* Inner padding for the card */
+    display: flex; /* Use flexbox for image and text alignment */
+    align-items: flex-start; /* Align items to the top */
+}
 
-  .job-description {
-    border-collapse: collapse; /* reduces space between cells */
+/* Inner container for content to manage flex direction (image vs text) */
+.member-content {
+    display: flex;
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+    gap: 30px; /* Space between image and text */
+    width: 100%;
+}
+
+/* Team member photo styling */
+.member-photo {
+    width: 200px; /* Fixed width for the image */
+    height: 200px; /* Fixed height to make it square */
+    border-radius: 50%; /* Make image circular */
+    object-fit: cover; /* Crop image to fit circular shape */
+    border: 3px solid rgb(34, 140, 225); /* Blue border around photo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for photo */
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+/* Text content next to the image */
+.member-text {
+    flex-grow: 1; /* Allow text to take remaining space */
+    min-width: 300px; /* Ensure text area doesn't get too small */
+}
+
+/* Styling for team member names (e.g., "Hey I'm Anas") */
+.member-title {
+    font-size: 1.8em; /* Consistent with enhancement titles */
+    font-weight: bold;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: rgb(34, 140, 225);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    border-left: 3px solid rgb(34, 140, 225);
+    padding-left: 10px;
+    background: linear-gradient(to right, rgb(34, 140, 225, 0.05), rgb(34, 140, 225, 0));
+}
+
+/* Specific styling for the contribution paragraph */
+.member-contribution {
+    margin-bottom: 15px;
+}
+
+/* "I am interested in:" label */
+.member-interests-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block; /* Ensure it takes full width above capsules */
+}
+
+/* Container for interest capsules */
+.interest-capsules {
+    display: flex;
+    flex-wrap: wrap; /* Allow capsules to wrap */
+    gap: 10px; /* Space between capsules */
+    margin-top: 10px;
+}
+
+/* Individual interest capsule styling */
+.interest-capsule {
+    background-color: rgb(34, 140, 225); /* Blue background */
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px; /* Pill shape */
+    font-size: 0.9em;
+    font-family: Arial, sans-serif;
+    white-space: nowrap; /* Prevent text wrapping inside capsule */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Class details section */
+.class-details-card {
+    /* Uses .enhancement-card for main styling */
+    margin-top: 30px; /* Space above this section */
+}
+
+.class-details-card .member-list {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0; /* Remove default padding */
+    margin-top: 15px;
+}
+
+.class-details-card .member-list li {
+    margin-bottom: 8px; /* Space between list items */
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* --- Media Queries for Responsiveness --- */
+@media (max-width: 768px) {
+    .team-member-card .member-content {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center items when stacked */
+        text-align: center;
+    }
+
+    .member-photo {
+        margin-bottom: 20px; /* Add space below image when stacked */
+    }
+
+    .member-title,
+    .member-contribution,
+    .member-interests-label {
+        text-align: center; /* Center text when stacked */
+        border-left: none; /* Remove border when stacked */
+        padding-left: 0;
+        background: none;
+    }
+}
+
+/* ====================
+   Application Page Styles (Updated)
+   ==================== */
+
+/* Main container for the form page content */
+.apply-main {
+    padding: 20px;
+    max-width: 900px; /* Limits the overall width for readability */
+    margin: 20px auto 40px auto; /* Centers content with more space below */
+    background-color: #f9f9f9; /* Light background for the main area */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05); /* Soft shadow for the main area */
+}
+
+/* Container for all fieldsets to give a card-like appearance */
+.form-container {
+    background-color: #fff; /* White background for the form area */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for the form container */
+    padding: 30px; /* Inner padding for the form */
+    margin-top: 30px; /* Space from the main page heading */
+}
+
+/* Main fieldset styling (Application Form) */
+.form-fieldset {
+    border: none; /* Remove default fieldset border */
+    padding: 0;
+    margin: 0;
+}
+
+/* Main legend styling (Application Form Title) */
+.form-legend {
+    font-size: 2em; /* Larger title */
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px; /* Space below title */
+    color: rgb(34, 140, 225);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.2);
+    border-left: 5px solid rgb(34, 140, 225);
+    padding-left: 15px;
+    background: linear-gradient(to right, rgb(34, 140, 225, 0.1), rgb(34, 140, 225, 0));
+    display: block; /* Ensures background gradient works correctly */
+    width: 100%; /* Spans full width */
+}
+
+/* Styling for sub-fieldsets (Details, Address, Contact, Skills) */
+.form-sub-fieldset {
+    background-color: #f8f8f8; /* Very light grey background for sub-sections */
+    border: 1px solid #e0e0e0; /* Subtle border */
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 25px; /* Space between sub-fieldsets */
+    font-family: Arial, sans-serif; /* Consistent font for text */
+    color: #333; /* Dark grey text */
+}
+
+/* Styling for sub-legends (Details, Address, Contact, Skills Titles) */
+.form-sub-legend {
+    font-size: 1.5em; /* Prominent heading for sub-sections */
+    font-weight: bold;
+    color: rgb(34, 140, 225); /* Blue color */
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgb(34, 140, 225); /* Blue underline */
+    padding-bottom: 5px;
+    display: block; /* To apply border-bottom properly */
+    width: 100%; /* Spans full width */
+}
+
+/* Styling for form paragraphs */
+.form-sub-fieldset p {
+    margin-bottom: 15px; /* Space between form rows */
+    display: flex; /* Use flex for label-input alignment */
+    align-items: center; /* Vertically align label and input */
+    gap: 10px; /* Space between label and input */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.form-sub-fieldset p label {
+    flex-basis: 150px; /* Give labels a consistent width */
+    font-weight: bold;
+    color: #555;
+}
+
+/* Styling for text inputs and select fields */
+.form-sub-fieldset input[type="text"],
+.form-sub-fieldset input[type="email"],
+.form-sub-fieldset select,
+.form-sub-fieldset textarea {
+    flex-grow: 1; /* Allow inputs to take remaining width */
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    min-width: 200px; /* Ensure inputs don't get too small */
+}
+
+.form-sub-fieldset textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+    min-height: 80px;
+}
+
+/* Specific styling for radio buttons (Gender) */
+.form-sub-fieldset p input[type="radio"] {
+    margin-right: 5px; /* Space between radio and label */
+    position: relative;
+    top: 2px;
+}
+
+.form-sub-fieldset p input[type="radio"] + label {
+    font-weight: normal; /* Labels for radios/checkboxes don't need to be bold */
+    flex-basis: unset; /* Don't force width for these labels */
+}
+
+/* Specific styling for checkboxes (Skills) */
+#skills p {
+    display: block; /* Reset display for checkboxes to stack */
+    margin-bottom: 5px;
+}
+
+#skills p label {
+    display: inline-flex; /* Use inline-flex for checkbox + label */
+    align-items: center;
+    gap: 5px;
+    font-weight: normal; /* Labels for checkboxes are not bold by default */
+    cursor: pointer;
+    margin-bottom: 5px;
+    flex-basis: unset; /* Don't force width for these labels */
+}
+
+/* Styling for the application buttons container */
+.application-buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    gap: 30px; /* Space between buttons */
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* Styling for Apply and Reset buttons (like job page apply link) */
+.form-button {
+    display: inline-block;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: transparent;
+    color: #007bff;
+    border: 2px solid #007bff;
+    border-radius: 25px;
+    text-decoration: none; /* In case it's an anchor, remove underline */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    cursor: pointer; /* Indicate it's clickable */
+}
+
+.form-button:hover {
+    background-color: #e0e0e0;
+    color: #000;
+    border-color: #c0c0c0;
+}
+
+/* Specific styling for Reset button if needed (e.g., different color) */
+.form-button.reset-button {
+    /* You can add specific styles here if you want the reset button to look different */
+    /* For example: */
+    /* color: #dc3545; */
+    /* border-color: #dc3545; */
+}
+
+.form-button.reset-button:hover {
+    /* background-color: #f8d7da; */
+    /* color: #dc3545; */
+    /* border-color: #dc3545; */
+}
+
+/* ====================
+   Jobs Page Styles
+   ==================== */
+.job-description {
+    border-collapse: collapse;
     margin-top: 25px;
     margin-bottom: 25px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 20px; /* Kept for left alignment of the table itself */
     font-size: 1em;
-    min-width: 700px;
-    max-width: 900px; 
+    width: 90%;
+    max-width: 900px;
     border-radius: 5px;
-    overflow: hidden; /* hides overflow content */
+    overflow: hidden;
     box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
-    font-family: 'Trebuchet MS' , Arial, sans-serif;
- 
- }
- 
- .job-description th {
-     background-color: rgb(34, 140, 225);
-     color: white; 
-     font-weight: bold;
-     padding: 15px;
-     font-size: 1.25em;
-     text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.1);
-     
- }
- 
- .job-description td {
-     padding: 12px 15px;  /* padding for table cells (vertical/horizontal) */
-     line-height: 25px;
- }
- 
- .job-description tr {
-     border-bottom: 1px solid #dddddd; /* bottom border for table rows */
- }
- 
- .job-description tr:nth-child(odd) {
-     background-color: #f2f2f2; /* light grey background for odd rows */
- }
- 
- .job-description tr:nth-child(3) {
-     font-weight: bold;
- }
- .job-description tr:hover {
-     color: rgb(34, 140, 225); 
- }
- 
- .job-description td ul li {
-     list-style-type: none; /* removes bullet points from list items */
- }
-  .job-description tr ol li{
-  margin-left: 20px; 
- }
- .apply-link {
-     display: flex;
-     justify-content: right;
-     padding: 10px 20px;
-     text-align: center;
-     width: fit-content;
-     margin-left: auto;
-     margin-right: 20px;
-     color: rgb(19, 158, 79);
-     background-color: rgb(255, 255, 255);
-     border: 3.5px solid rgb(19, 158, 79);
-     border-radius: 25px;
-     text-decoration: none;
-     font-family: 'Trebuchet MS', Arial, sans-serif;
- }
- 
- .apply-link:hover {
-     background-color: rgb(5, 187, 65);
-     box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.2);
- }
- .job-title {
-     font-size: 1.5em;
-     font-weight: bold;
-     text-align: center;
-     margin-top: 20px;
-     margin-bottom: 20px;
-     color: rgb(34, 140, 225);
-     font-family: 'Trebuchet MS', Arial, sans-serif;
-     text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.2);
- }
- 
- .job-maintitle {
-     font-size: 2.5em;
-     font-weight: bold;
-     text-align: left;
-     margin-left: 20px;
-     margin-top: 20px;
-     margin-bottom: 20px;
-     color: rgb(34, 140, 225);
-     font-family: 'Trebuchet MS', Arial, sans-serif;
-     text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.2);
-     border-left: 5px solid rgb(34, 140, 225);
-     padding-left: 15px;
-     background: linear-gradient(to right, rgb(34, 140, 225, 0.1), rgb(34, 140, 225, 0));
- }
- aside {
-     font-size: 1.1em;
-     font-family: 'Trebuchet MS', Arial, sans-serif;
-     margin: 20px;
-     padding: 15px;
-     width: 25%;
-     float: right;
-     border: 3px solid rgb(34, 140, 225);
-     border-radius: 5px;
-     background-color: rgb(240, 248, 255); /* light background for better visibility */
-     box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.2);
-     min-width: 300px;
- }
- 
- main {
-     min-width: 68em;
- }
-
-  /* Footer */
-
-  footer {
-    background-color: #333; /* gray background */
-    padding: 30px 20px; 
-    text-align: center; 
-    color: white; 
+    font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
-
-.footer-buttons {
-    display: flex; /* Horizontal layout */
-    justify-content: center; 
-    gap: 20px; 
-    margin-bottom: 20px; 
+/* MODIFIED: Ensure uniform blue background and white text for table headers */
+.job-description th {
+    background-color: rgb(34, 140, 225); /* Re-applied blue background */
+    color: white; /* Re-applied white text color */
+    font-weight: bold;
+    padding: 15px;
+    font-size: 1.25em;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.1);
+    text-align: left;
+    width: 200px; /* NEW: Set a fixed width for the header column for uniformity */
+    vertical-align: top; /* Align content to the top if it wraps */
 }
 
-/* Individual footer buttons */
-.footer-button {
-    color: #333; 
-    background-color: white; 
-    text-decoration: none; /* Removes underline */
+.job-description td {
+    padding: 12px 15px;
+    line-height: 25px;
+    text-align: left;
+}
+
+.job-description tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.job-description tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.job-description tr:nth-child(3) {
+    font-weight: bold;
+}
+
+.job-description tr:hover {
+    color: rgb(34, 140, 225);
+}
+
+.job-description td ul li {
+    list-style-type: none;
+}
+
+.job-description tr ol li {
+    margin-left: 20px;
+}
+
+/* Apply link updated for left alignment */
+.apply-link {
+    display: inline-block;
+    padding: 12px 28px;
     font-size: 16px;
-    padding: 10px 20px; 
-    border-radius: 50px; 
-    display: inline-block; 
-    transition: background-color 0.3s, color 0.3s; 
+    font-weight: 600;
+    background-color: transparent;
+    color: #007bff;
+    border: 2px solid #007bff;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    margin-left: 20px;
+    margin-right: 0;
+    float: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.apply-link:hover {
+    background-color: #e0e0e0;
+    color: #000;
+    border-color: #c0c0c0;
+}
+
+.job-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: rgb(34, 140, 225);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.2);
+}
+
+.job-maintitle {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(34, 140, 225);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.2);
+    border-left: 5px solid rgb(34, 140, 225);
+    padding-left: 15px;
+    background: linear-gradient(to right, rgb(34, 140, 225, 0.1), rgb(34, 140, 225, 0));
+}
+
+.recruitment-info {
+    font-size: 1.1em;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin: 20px;
+    padding: 15px;
+    width: 25%;
+    float: right;
+    border: 3px solid rgb(34, 140, 225);
+    border-radius: 5px;
+    background-color: rgb(240, 248, 255);
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.2);
+    min-width: 300px;
+}
+
+/* Clearfix for sections containing floated aside */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+main {
+    min-width: 68em;
+    overflow: hidden;
+}
+/* ====================
+   Enhancements Page Styles 
+   ==================== */
+
+/* Main container for the enhancements page content */
+.enhancements-main {
+    padding: 20px;
+    max-width: 900px; /* Limits the overall width for readability */
+    margin: 20px auto 40px auto; /* Centers content with more space below */
+    background-color: #f9f9f9; /* Light background for the main area */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05); /* Soft shadow for the main area */
+}
+
+/* Page's main title (similar to jobs page main title) */
+.page-main-heading {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: left;
+    margin: 20px 0; /* Adjust margin for top heading */
+    color: rgb(34, 140, 225);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.2);
+    border-left: 5px solid rgb(34, 140, 225);
+    padding-left: 15px;
+    background: linear-gradient(to right, rgb(34, 140, 225, 0.1), rgb(34, 140, 225, 0));
 }
 
 
-.footer-button:hover {
-    background-color: #3399FF; 
-    color: white; 
+/* Styling for each individual enhancement section (card) */
+.enhancement-card {
+    background-color: #fff; /* White background for each enhancement card */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for the card */
+    margin-bottom: 30px; /* Space between cards */
+    padding: 20px; /* Padding inside each card */
 }
 
+/* Styling for the enhancement title (similar to job-maintitle/job-title) */
+.enhancement-title {
+    font-size: 1.8em; /* Slightly smaller than main page heading, larger than body text */
+    font-weight: bold;
+    text-align: left;
+    margin-top: 0; /* Remove default top margin */
+    margin-bottom: 15px;
+    color: rgb(34, 140, 225); /* Blue color */
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    /* Mimic the border and background of the jobs main title */
+    border-left: 3px solid rgb(34, 140, 225);
+    padding-left: 10px;
+    background: linear-gradient(to right, rgb(34, 140, 225, 0.05), rgb(34, 140, 225, 0));
+}
 
-footer p {
-    margin-top: 10px; 
-    font-size: 14px; 
-    color: #ccc; 
+/* Styling for the enhancement description (black, same font as homepage) */
+.enhancement-description {
+    font-family: Arial, sans-serif; /* Your homepage font */
+    font-size: 1em; /* Standard paragraph size */
+    line-height: 1.6;
+    color: #333; /* Dark grey/black for readability */
+    text-align: left;
+    margin-bottom: 0; /* Remove default bottom margin if not followed by anything */
+}
+
+/* ===================================
+   Login Page and Register Page Styles
+   ===================================*/
+
+/* Main container for the login page */
+.login-main {
+    padding: 20px;
+    max-width: 900px; /* Limits the overall width for readability */
+    margin: 20px auto 40px auto; /* Centers content with more space below */
+    background-color: #f9f9f9; /* Light background for the main area */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05); /* Soft shadow for the main area */
+}
+
+/* Container for login and register cards */
+.login-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+    gap: 30px; /* Space between the login and register cards */
+    justify-content: center; /* Center the cards */
+    margin-top: 30px; /* Space from the main page heading */
+}
+
+/* Styling for individual login/register cards */
+.login-card,
+.register-card {
+    background-color: #fff; /* White background for the card */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for the card */
+    padding: 30px;
+    flex: 1; /* Allows cards to grow and shrink */
+    min-width: 300px; /* Minimum width before wrapping */
+    max-width: 400px; /* Max width for individual cards */
+    text-align: center; /* Center content within the card */
+}
+
+/* Titles within the login/register cards */
+.login-title {
+    font-size: 1.8em; /* Consistent with other section titles */
+    font-weight: bold;
+    color: rgb(34, 140, 225); /* Blue color */
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid rgb(34, 140, 225); /* Underline for title */
+    padding-bottom: 10px;
+    margin-bottom: 25px; /* Space below title */
+}
+
+/* Form group for labels and inputs */
+.form-group {
+    margin-bottom: 20px; /* Space between form fields */
+    text-align: left; /* Align labels/inputs to the left within their group */
+}
+
+.form-group label {
+    display: block; /* Make labels take full width */
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 8px; /* Space between label and input */
+    font-family: Arial, sans-serif; /* Consistent body font */
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="email"] {
+    width: 100%; /* Full width within its container */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+}
+
+/* Specific styling for the Login button */
+.login-button {
+    background-color: #007bff; /* Solid blue background for primary action */
+    color: white;
+    border-color: #007bff;
+    margin-top: 20px; /* Space above the button */
+    width: 100%; /* Full width for the button */
+}
+
+.login-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #0056b3;
+    color: white; /* Ensure text remains white */
+}
+
+/* Specific styling for the Register button */
+.register-card .enhancement-description {
+    margin-bottom: 25px; /* Space between text and button */
+}
+
+.register-button {
+    background-color: transparent; /* Transparent background */
+    color: #007bff; /* Blue text */
+    border-color: #007bff; /* Blue border */
+    width: 100%; /* Full width for the button */
+}
+
+.register-button:hover {
+    background-color: #e0e0e0; /* Light grey background on hover */
+    color: #000; /* Black text on hover */
+    border-color: #c0c0c0; /* Lighter border on hover */
+}
+
+/* ====================
+   Manage Page Styles
+   ==================== */
+
+/* Custom Header for Manage Page */
+.manage-header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Consistent shadow */
+}
+
+.manage-header .brand {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.manage-header .brand-text h1 {
+    font-size: 36px;
+    margin: 0; /* Remove default margin */
+}
+
+.manage-header #logo {
+    max-width: 80px; /* Slightly smaller logo for this header */
+    height: auto;
+}
+
+/* Main container for the manage page content */
+.manage-main {
+    padding: 20px;
+    max-width: 1200px; /* Wider for table */
+    margin: 20px auto 40px auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Styling for each management card (Search, Delete, Sort) */
+.manage-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+/* Titles within the management cards */
+.manage-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: rgb(34, 140, 225);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid rgb(34, 140, 225);
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+/* General form styling within manage cards */
+.manage-form {
+    display: flex;
+    flex-wrap: wrap; /* Allow form groups to wrap */
+    gap: 20px; /* Space between form groups */
+    align-items: flex-end; /* Align inputs/buttons to the bottom */
+}
+
+.manage-form .form-group {
+    flex: 1; /* Allow form groups to take available space */
+    min-width: 180px; /* Ensure groups don't get too small */
+    margin-bottom: 0; /* Remove default margin-bottom from form-group */
+}
+
+.manage-form .form-group label {
+    margin-bottom: 5px; /* Smaller space between label and input */
+}
+
+.manage-form input[type="text"],
+.manage-form select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+}
+
+/* Small button for status update within table */
+.form-button.small-button {
+    padding: 6px 12px; /* Smaller padding */
+    font-size: 0.9em; /* Smaller font size */
+    border-radius: 20px;
+    margin-left: 5px; /* Space from select box */
+}
+
+/* Delete button specific styling */
+.form-button.delete-button {
+    background-color: #dc3545; /* Red for delete action */
+    color: white;
+    border-color: #dc3545;
+}
+
+.form-button.delete-button:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+/* Query results section */
+.manage-results-section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 30px; /* Space after query forms */
+}
+
+/* Table styling for EOIs */
+.eoi-table-container {
+    overflow-x: auto; /* Enable horizontal scrolling for wide tables */
+    margin-top: 20px;
+}
+
+.eoi-table {
+    width: 100%; /* Make table take full width of its container */
+    max-width: unset; /* Override max-width from .job-description */
+    font-size: 0.9em; /* Slightly smaller font for more data */
+}
+
+.eoi-table th, .eoi-table td {
+    padding: 10px 12px; /* Adjusted padding */
+    white-space: nowrap; /* Prevent text wrapping in cells by default */
+}
+
+.eoi-table td.status-update-cell {
+    white-space: normal; /* Allow wrapping in the action cell */
+    min-width: 150px; /* Ensure enough space for form */
+}
+
+.eoi-table .status-update-form {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between select and button */
+}
+
+.eoi-table .status-select {
+    padding: 5px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Messages (Success, Error, Info) */
+.success-message {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.info-message {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border: 1px solid #bee5eb;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.no-results {
+    font-style: italic;
+    color: #666;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Adjust button alignment within forms if needed */
+.manage-form button[type="submit"] {
+    margin-top: 20px; /* Ensure button aligns well if other inputs wrap */
 }

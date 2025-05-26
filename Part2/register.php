@@ -8,23 +8,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-</head>
+    <title>Register - TrueDigital</title>
+    <link rel="stylesheet" href="styles/styles.css"> </head>
 <body>
-    <h1>Register</h1>
-<section id="registerpage">
-    <form method="POST" action="register_process.php">
-        <label for="username">Username</label>
-        <input type="text" name="registerusername" id="registerusername">
+        <?php include 'inc_files/header.inc'; ?>
 
-        <label for="registerpassword">Password</label>
-        <input type="password" name="registerpassword" id="registerpassword">
+    <main class="login-main"> <h1 class="page-main-heading">Create Account</h1> <div class="login-container"> <section class="login-card"> <h2 class="login-title">New User Registration</h2> <form method="POST" action="register_process.php">
+                    <div class="form-group">
+                        <label for="registerusername">Username</label>
+                        <input type="text" name="registerusername" id="registerusername" required>
+                    </div>
 
-        <label for="registeremail">Email</label>
-        <input type="email" name="registeremail" id="registeremail">
+                    <div class="form-group">
+                        <label for="registeremail">Email</label>
+                        <input type="email" name="registeremail" id="registeremail" required>
+                    </div>
 
-        <input type="submit" value="register">
-    </form>
-</section>
+                    <div class="form-group">
+                        <label for="registerpassword">Password</label>
+                        <input type="password" name="registerpassword" id="registerpassword" required>
+                    </div>
+
+                    <button type="submit" class="form-button register-submit-button">Register</button> </form>
+            </section>
+        </div>
+    </main>
+
+    <?php include 'inc_files/footer.inc'; ?>
 </body>
 </html>
